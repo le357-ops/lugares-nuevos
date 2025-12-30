@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Sitio Café</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body class="theme-cafe">
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🌄</span>
+      <span class="brand-name">México Perdido</span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <div class="actions">
+        <button id="themeToggle" class="btn">Modo oscuro</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <h1>Contacto</h1>
+      <p>Cuéntanos tu nombre y cómo podemos ayudarte.</p>
+    </section>
+
+    <section class="contact-grid">
+      <form id="contactForm" class="card">
+        <h2>Escríbenos</h2>
+        <div class="form-field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required/>
+        </div>
+        <div class="form-field">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" placeholder="tunombre@correo.com" required/>
+        </div>
+        <div class="form-field">
+          <label for="topic">Relación</label>
+          <select id="topic" name="topic" required>
+            <option value="">Selecciona una opción</option>
+            <option value="acerca">Consulta sobre “Acerca de”</option>
+            <option value="catalogo">Consulta sobre “Catálogo”</option>
+            <option value="inicio">Consulta sobre “Inicio”</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Enviar</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="card">
+        <h2>Información</h2>
+        <ul class="list">
+          <li><strong>Ubicación:</strong> Huixquilucán, México</li>
+          <li><strong>Horario:</strong> Lunes a Viernes, 9:00–18:00</li>
+          <li><strong>Correo:</strong> contacto@sitiocafe.mx</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Sitio Café —, México</p>
+  </footer>
+</body>
+</html>

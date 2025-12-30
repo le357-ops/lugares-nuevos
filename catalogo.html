@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>México Perdido | Catálogo</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body class="theme-cafe">
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🌄</span>
+      <span class="brand-name">México Perdido</span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="actions">
+        <button id="themeToggle" class="btn">Modo oscuro</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <h1>México Perdido</h1>
+      <p><strong>Lugares</strong> — descubre y diviertete</p>
+    </section>
+
+    <!-- Mapa conceptual de Lugares -->
+    <section class="concept-map">
+      <div class="concept-center">Lugares</div>
+      <div class="concept-node" data-link="#pozas">Las Pozas</div>
+      <div class="concept-node" data-link="#luci">Santuario de Luciérnagas</div>
+      <div class="concept-node" data-link="#estacahuite">Playa Estacahuite</div>
+      <div class="concept-node" data-link="#lobos">Bosque Peña de Lobos</div>
+
+      <div class="concept-details">
+        <article id="pozas" class="detail-card">
+          <h2>Las Pozas — Xilitla</h2>
+          <p>Jardín escultórico surrealista creado por Edward James.</p>
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800" alt="Las Pozas"/>
+        </article>
+        <article id="luci" class="detail-card">
+          <h2>Santuario de Luciérnagas — Tlaxcala</h2>
+          <p>Bosque iluminado por millones de luciérnagas en temporada de lluvia.</p>
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Luciérnagas"/>
+        </article>
+        <article id="estacahuite" class="detail-card">
+          <h2>Playa Estacahuite — Oaxaca</h2>
+          <p>Rincón virgen en la costa chica de Oaxaca, oculta en el acantilado y la selva.</p>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Playa Estacahuite"/>
+        </article>
+        <article id="lobos" class="detail-card">
+          <h2>Bosque Peña de Lobos — Estado de México</h2>
+          <p>Bosque templado de coníferas y árboles de hoja ancha, con paisajes relajantes y místicos.</p>
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" alt="Bosque Peña de Lobos"/>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mapa conceptual de Recomendaciones -->
+    <section class="hero small">
+      <h2>Recomendaciones</h2>
+      <p>Consejos prácticos para disfrutar mejor los lugares.</p>
+    </section>
+
+    <section class="concept-map">
+      <div class="concept-center">Recomendaciones</div>
+      <div class="concept-node" data-link="#calzado">Calzado antiderrapante</div>
+      <div class="concept-node" data-link="#repelente">Repelente</div>
+      <div class="concept-node" data-link="#horario">Llegar temprano</div>
+      <div class="concept-node" data-link="#tenis">Tenis de senderismo</div>
+      <div class="concept-node" data-link="#atardecer">Ver el atardecer</div>
+      <div class="concept-node" data-link="#agua">Agua suficiente</div>
+      <div class="concept-node" data-link="#snacks">Snacks ligeros</div>
+      <div class="concept-node" data-link="#camara">Cámara fotográfica</div>
+
+      <div class="concept-details">
+        <article id="calzado" class="detail-card">
+          <h2>Calzado antiderrapante</h2>
+          <p>Indispensable para caminar en terrenos húmedos o con pendientes.</p>
+        </article>
+        <article id="repelente" class="detail-card">
+          <h2>Repelente</h2>
+          <p>Protección contra insectos, especialmente en bosques y selvas.</p>
+        </article>
+        <article id="horario" class="detail-card">
+          <h2>Horario recomendado</h2>
+          <p>Visitar temprano (entre 8–10am) para aprovechar la luz y tranquilidad.</p>
+        </article>
+        <article id="tenis" class="detail-card">
+          <h2>Tenis de senderismo</h2>
+          <p>El terreno puede ser seco y accidentado, ideal usar calzado especializado.</p>
+        </article>
+        <article id="atardecer" class="detail-card">
+          <h2>Atardecer</h2>
+          <p>Llegar tarde para disfrutar la vista del sol ocultándose entre montañas o el mar.</p>
+        </article>
+        <article id="agua" class="detail-card">
+          <h2>Agua suficiente</h2>
+          <p>Lleva al menos un litro por persona para mantenerte hidratado.</p>
+        </article>
+        <article id="snacks" class="detail-card">
+          <h2>Snacks ligeros</h2>
+          <p>Fruta seca, barras energéticas o semillas para reponer energía.</p>
+        </article>
+        <article id="camara" class="detail-card">
+          <h2>Cámara fotográfica</h2>
+          <p>No olvides capturar los paisajes únicos y momentos especiales.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 México Perdido</p>
+  </footer>
+</body>
+</html>
